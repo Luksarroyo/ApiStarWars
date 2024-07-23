@@ -1,0 +1,36 @@
+.container{
+   position: relative;
+    /* text-align: center; */
+}
+ .title{
+    background: yellow;
+ } 
+ .film{
+    color: yellow;
+    text-decoration: none;
+
+ } 
+ .link{
+    text-decoration: none;
+ }
+ .bottom{
+    border: 3px solid #ebe8e8;
+ }
+ .box{
+   position: absolute; /* Posiciona el cuadro de manera absoluta dentro del contenedor */
+  top: 50%; /* Centra verticalmente el cuadro */
+  left: 50%; /* Centra horizontalmente el cuadro */
+  transform: translate(-50%, -50%); /* Ajusta la posición para centrar el cuadro */
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para el cuadro */
+  color: white; /* Color del texto */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados opcionales */
+  width: 50%; /* Ancho del cuadro, ajusta según sea necesario */
+  text-align: center; /* Centra el texto dentro del cuadro */
+ }
+ .img{
+   width: 500px;
+  height: 500px;
+  /* object-fit: cover; Asegura que la imagen cubra todo el contenedor */
+
+ }
