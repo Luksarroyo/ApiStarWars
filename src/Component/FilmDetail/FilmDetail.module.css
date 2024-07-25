@@ -1,16 +1,24 @@
-.img{
-    width: 100%;
-    height: 670px;
+.img {
+  width: 100%;
+  height: 670px;
 }
-.box{
-    position: absolute; /* Posiciona el cuadro de manera absoluta dentro del contenedor */
-   top: 50%; /* Centra verticalmente el cuadro */
-   left: 50%; /* Centra horizontalmente el cuadro */
-   transform: translate(-50%, -50%); /* Ajusta la posición para centrar el cuadro */
-   background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente para el cuadro */
-   color: white; /* Color del texto */
-   padding: 10px; /* Espaciado interno */
-   border-radius: 10px; /* Bordes redondeados opcionales */
-   width: 50%; /* Ancho del cuadro, ajusta según sea necesario */
-   text-align: center; /* Centra el texto dentro del cuadro */
-  }
+.box {
+  position: absolute; /* Posiciona el cuadro de manera absoluta dentro del contenedor */
+  top: 50%; /* Centra verticalmente el cuadro */
+  left: 50%; /* Centra horizontalmente el cuadro */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Ajusta la posición para centrar el cuadro */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Fondo semitransparente para el cuadro */
+  color: white; /* Color del texto */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados opcionales */
+  width: 50%; /* Ancho del cuadro, ajusta según sea necesario */
+  text-align: center; /* Centra el texto dentro del cuadro */
+}
