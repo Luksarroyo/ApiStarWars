@@ -3,7 +3,7 @@ import FilmDetail from "./FilmDetail";
 // import { useParams } from "react-router-dom";
 
 const FilmDetailContainer = () => {
-  const [film, setFilm] = useState([]);
+  const [film, setFilm] = useState({});
 
   useEffect(() => {
     fetch("https://swapi.dev/api/films")
