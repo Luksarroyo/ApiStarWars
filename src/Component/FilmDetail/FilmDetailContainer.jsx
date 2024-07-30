@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import FilmDetail from "./FilmDetail";
-// import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 const FilmDetailContainer = () => {
   const [film, setFilm] = useState({});
+  const { id } = useParams();
 
   useEffect(() => {
     fetch("https://swapi.dev/api/films")
@@ -14,10 +15,13 @@ const FilmDetailContainer = () => {
         return res.json();
       })
       .then((data) => {
-        setFilm(data.results.episode_id);
+        const idEncontrada = data.results.find(
+          (prod) => prod.episode_id === parseInt(id)
+        );
+        setFilm(idEncontrada);
       })
       .catch((err) => console.log(err));
-  }, []);
+  }, [id]);
 
   return <FilmDetail film={film} />;
 };
